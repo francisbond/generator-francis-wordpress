@@ -77,6 +77,8 @@ For database deployment functionality to work, the `wp-config.php` file must be 
 For example:
 
 ```
+<?php
+
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
   define('ABSPATH', dirname(__FILE__) . '/');
