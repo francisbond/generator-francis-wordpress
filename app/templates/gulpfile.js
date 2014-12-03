@@ -53,7 +53,7 @@ gulp.task('deploy', function() {
 /**
  * gulp db-dump-local
  */
-gulp.task('db-dump-local', ['build'], function() {
+gulp.task('db-dump-local', function() {
   var slug = '<%= _.slugify(slug) %>';
 
   return gulp.src('')
@@ -66,7 +66,7 @@ gulp.task('db-dump-local', ['build'], function() {
 /**
  * gulp db-dump-remote
  */
-gulp.task('db-dump-remote', ['build'], function() {
+gulp.task('db-dump-remote', function() {
   var server = options.env === 'production'
     ? '<%= remoteProduction %>'
     : '<%= remoteStaging %>';
