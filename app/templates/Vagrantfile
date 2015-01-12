@@ -5,7 +5,7 @@
 # CONFIGURABLE PROPERTIES
 # ------------------------------------------------------------------------
 $project_name  = '<%= _.slugify(slug) %>'
-$ip_address = '192.168.' + (0..255).to_a.sample + '.' + (0..255).to_a.sample
+$ip_address = '192.168.' + (0...255).to_a.sample + '.' + (0...255).to_a.sample
 $hostname = $project_name + '.wordpress.dev'
 # ------------------------------------------------------------------------
 
