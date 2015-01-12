@@ -87,7 +87,7 @@ gulp.task('db-dump-remote', function() {
 /**
  * gulp db-push
  */
-gulp.task('db-push', ['db-dump-local'], function() {
+gulp.task('db-push', function() {
   var server = options.env === 'production'
     ? '<%= remoteProduction %>'
     : '<%= remoteStaging %>';
@@ -103,7 +103,7 @@ gulp.task('db-push', ['db-dump-local'], function() {
 /**
  * gulp db-pull
  */
-gulp.task('db-pull', ['db-dump-remote'], function(){
+gulp.task('db-pull', function(){
   var file = options.env === 'production'
     ? 'remote--production.sql'
     : 'remote--staging.sql';
@@ -120,7 +120,6 @@ gulp.task('db-pull', ['db-dump-remote'], function(){
  * gulp db-dump
  */
 gulp.task('db-dump', [
-    'clean',
     'db-dump-local',
     'db-dump-remote'
   ], function() {
