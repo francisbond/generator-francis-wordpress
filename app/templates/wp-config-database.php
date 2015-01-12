@@ -13,7 +13,7 @@ if (isset($_SERVER['X_FORWARDED_HOST']) && !empty($_SERVER['X_FORWARDED_HOST']))
 
 /** Set environment based on hostname */
 switch ($hostname) {
-  case '<%= _.slugify(slug) %>.craft.dev':
+  case '<%= _.slugify(slug) %>.wordpress.dev':
     /** The name of the database for WordPress */
     define('DB_NAME', '<%= _.slugify(slug) %>');
 
