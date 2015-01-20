@@ -2,6 +2,7 @@
   "require": {
     "ext-gd": "*",
     "ext-mbstring": "*",
-    "ext-ftp": "*"
+    "ext-ftp": "*",
+    "ext-mysql": "*"
   }
 }

@@ -24,7 +24,7 @@ var FrancisWordpressGenerator = yeoman.generators.Base.extend({
     {
       name: 'production',
       message: 'Enter the hostname of the dokku production server',
-      default: 'production.francisbond.com'
+      default: 'wp.francisbond.com'
     }], function(props) {
       this.slug = props.slug;
       this.remoteStaging = props.staging;
