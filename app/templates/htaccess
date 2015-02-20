@@ -8,3 +8,9 @@
   RewriteRule . /index.php [L]
 </IfModule>
 # END WordPress
+
+<IfModule mod_php5.c>
+	php_value max_execution_time 600
+	php_value memory_limit 768M
+	php_value upload_max_filesize 32M
+</IfModule>
