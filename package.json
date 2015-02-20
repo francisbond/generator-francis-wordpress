@@ -1,6 +1,6 @@
 {
   "name": "generator-francis-wordpress",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Deploy a Wordpress website",
   "license": "MIT",
   "main": "app/index.js",
